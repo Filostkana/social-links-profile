@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+.attribution {
+  left: 50%;
+  font-size: 11px;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  visibility: hidden;
+}
+@media only screen and (min-width: 400px) {
+  .attribution {
+    visibility: visible;
+  }
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card {
+  width: 32rem;
+  text-align: center;
+  border-radius: 2rem;
+  padding: 1.6rem;
+  background-color: hsl(0, 0%, 12%);
+}
+
+.card-header {
+  margin-bottom: 1.6rem;
+}
+.card-header img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+.card-header__header {
+  margin: 2.4rem 0;
+}
+.card-header__header--h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 140%;
+  margin-bottom: 0.5rem;
+}
+.card-header__header--sub {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: hsl(75, 94%, 57%);
+}
+.card-header__description {
+  font-size: 1.2rem;
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.social-links {
+  list-style: none;
+}
+.social-links a {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 150%;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 20%);
+  transition: background-color 0.7s, color 0.5s;
+}
+.social-links a:hover {
+  color: black;
+  background-color: hsl(75, 94%, 57%);
+}/*# sourceMappingURL=style.css.map */

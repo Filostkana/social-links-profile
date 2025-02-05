@@ -1,0 +1,72 @@
+$Green: hsl(75, 94%, 57%);
+
+$White: hsl(0, 0%, 100%);
+
+$Grey700: hsl(0, 0%, 20%);
+$Grey800: hsl(0, 0%, 12%);
+$Grey900: hsl(0, 0%, 8%);
+
+// @font-face {
+//     font-family: 'Inter';
+//     src: url('../assets/fonts/static/Inter-Bold.ttf') format('truetype');    font-style: normal;
+//     font-weight: 700;
+// }
+// @font-face {
+//     font-family: 'Inter';
+//     src: url('../assets/fonts/static/Inter-Bold.ttf') format('truetype');    font-style: normal;
+//     font-weight: 600;
+// }
+// @font-face {
+//     font-family: 'Inter', sans-serif;
+//     src: url('../assets/fonts/static/Inter-Bold.ttf') format('truetype');
+//     font-style: normal;
+//     font-weight: 400;
+// }
+
+@mixin mq($width) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: $Grey900;
+    color: $White;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.attribution { 
+    left: 50%;
+    font-size: 11px; 
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    visibility: hidden;
+
+    @include mq(400px) {
+        visibility: visible;
+    }
+
+    a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
+

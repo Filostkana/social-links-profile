@@ -1,0 +1,60 @@
+@use "./base" as *;
+
+.card {
+    width: 32rem;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 1.6rem;
+    background-color: $Grey800;
+}
+
+.card-header {
+    margin-bottom: 1.6rem;
+    img {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+    }
+    &__header {
+        margin: 2.4rem 0;
+        &--h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 140%;
+            margin-bottom: 0.5rem;
+        }
+        &--sub {
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 150%;
+            color: $Green;
+        }
+    }
+    &__description {    
+        font-size: 1.2rem;
+        line-height: 150%;
+        font-weight: 400;
+    }
+}
+
+.social-links {
+    list-style: none;
+    a {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 150%;
+        text-decoration: none;
+        margin-bottom: 1rem;
+        padding: 1rem 0;
+        border-radius: 1rem;
+        color: $White;
+        background-color: $Grey700;
+        transition: background-color 0.7s, color 0.5s;
+    }
+
+    a:hover {
+        color: black;
+        background-color: $Green;
+    }
+}
