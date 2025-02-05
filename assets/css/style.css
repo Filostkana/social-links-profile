@@ -43,7 +43,7 @@ main {
   width: 32rem;
   text-align: center;
   border-radius: 2rem;
-  padding: 1.6rem;
+  padding: 3.16rem;
   background-color: hsl(0, 0%, 12%);
 }
 
@@ -79,13 +79,15 @@ main {
 .social-links {
   list-style: none;
 }
+.social-links li {
+  margin-bottom: 1.6rem;
+}
 .social-links a {
   display: block;
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 150%;
   text-decoration: none;
-  margin-bottom: 1rem;
   padding: 1rem 0;
   border-radius: 1rem;
   color: hsl(0, 0%, 100%);
